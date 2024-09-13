@@ -1,0 +1,30 @@
+.night__theme{
+    background-color: #f0f0f0;
+    transition: background-color 0.7s ease;
+}
+#theme.night button {
+    background-color: #ff9f0a;
+    transform: translateX(40px);
+}
+.night__theme .calculator{
+    background-color: hsl(0, 0%, 94%);
+    border: 1.5px solid #c0c0c0;
+    box-shadow: 0px 20px 50px #7c7d7e;
+    transition: all 0.7s ease;
+}
+.night__theme .calculator-screen {
+    color: #646464;
+    transition: all 0.7s ease;
+}
+.night__theme .btn.number, .night__theme .btn.point {
+    background-color: #fefefe;
+    color: #535353;
+}
+.night__theme .top__btn, .night__theme #percent{
+    background-color: #fcfcfc;
+    color:#646464;
+}
+.night__theme .operation{
+    background-color: #fcfcfc;
+    color: #ff9f0a;
+}
