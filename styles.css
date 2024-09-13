@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Roboto';
+}
+
+.calculator {
+    border: 1.5px solid #7d7d7d;
+    outline: 1.5px solid #181818;
+    background-color: #535353;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.calculator-screen {
+    font-size: 28px;
+    position: relative;
+    height: 75px;
+    padding: 10px;
+    color: white;
+    font-family: 'SF Pro', 'Arial', sans-serif;
+}
+
+#light {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    gap: 7px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #FF5F56;
+}
+
+.yellow {
+    background-color: #FFBD2E;
+}
+
+.green {
+    background-color: #27C93F;
+}
+
+.result {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    color: white;
+    font-size: 24px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.btn.number {
+    background-color: #7a7a7a;
+}
+
+.btn.zero {
+    grid-column: span 2;
+    border-bottom-left-radius: 14px;
+}
+
+.btn:active {
+    background-color: #ff9500;
+}
+.top__btn{
+    background-color: #646464;
+}
+.operation, .equal{
+    background-color: #ff9f0a;
+}
+.number, .point{
+    background-color: #7d7d7d;
+}
+.equal{
+    border-bottom-right-radius: 14px;
+}
+
+
+#theme {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #535353;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    transition: background-color 0.7s ease;
+}
+
+#theme.night {
+    background-color: #fff;
+}
+
+#theme button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    transition: transform 0.7s ease, background-color 0.7s ease;
+    transform: translateX(0);
+}
+
+#theme.night button {
+    background-color: #535353;
+    transform: translateX(40px);
+}
+#percent{
+    background-color: #646464;
+}
