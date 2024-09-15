@@ -1,16 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #454545;
     font-family: 'Roboto';
+    transition: background-color 0.7s ease;
 }
-
 .calculator {
     border: 1.5px solid #7d7d7d;
-    outline: 1.5px solid #181818;
     background-color: #535353;
     padding: 0px;
     border-radius: 15px;
@@ -117,7 +120,9 @@ body {
 #theme.night {
     background-color: #fff;
 }
-
+#theme.day {
+    background-color: #535353;
+}
 #theme button {
     height: 30px;
     width: 30px;
@@ -128,10 +133,37 @@ body {
     transform: translateX(0);
 }
 
-#theme.night button {
-    background-color: #535353;
-    transform: translateX(40px);
-}
 #percent{
     background-color: #646464;
+}
+
+.night__theme{
+    background-color: #f0f0f0;
+    transition: background-color 0.7s ease;
+}
+#theme.night button {
+    background-color: #ff9f0a;
+    transform: translateX(40px);
+}
+.night__theme .calculator{
+    background-color: hsl(0, 0%, 94%);
+    border: 1.5px solid #c0c0c0;
+    box-shadow: 0px 20px 50px #7c7d7e;
+    transition: all 0.7s ease;
+}
+.night__theme .calculator-screen {
+    color: #646464;
+    transition: all 0.7s ease;
+}
+.night__theme .btn.number, .night__theme .btn.point {
+    background-color: #fefefe;
+    color: #535353;
+}
+.night__theme .top__btn, .night__theme #percent{
+    background-color: #fcfcfc;
+    color:#646464;
+}
+.night__theme .operation{
+    background-color: #fcfcfc;
+    color: #ff9f0a;
 }

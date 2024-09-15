@@ -9,6 +9,13 @@ const operators = ['+', '−', '×', '÷', '%']
 const plusMinus = document.querySelector('#plus-minus')
 let operation = "", tempValue = "0", value = "", pointActive = false, isOperation = false, lastButton = "", hasEqual = false
 
+const themeSwitch = document.getElementById('theme')
+
+themeSwitch.addEventListener('click', () => {
+    themeSwitch.classList.toggle('night')
+    document.body.classList.toggle('night__theme')
+})
+
 numbers.forEach(number => number.addEventListener('click', () => {
     addNumber(number.innerHTML)
     lastButton = 'number'
